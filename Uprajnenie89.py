@@ -1,29 +1,29 @@
 #Функция которая переводит числа в числительные в диапазоне от 1 до 12.
 def Numerals(Number):
     if Number == 1:
-        print('First')
+        return 'First'
     elif Number == 2:
-        print('Second')
+        return 'Second'
     elif Number == 3:
-        print('Third')
+        return 'Third'
     elif Number == 4:
-        print('Fourth')
+        return 'Fourth'
     elif Number == 5:
-        print('Fifth')
+        return 'Fifth'
     elif Number == 6:
-        print('Sixth')
+         return 'Sixth'
     elif Number == 7:
-        print('Seventh')
+        return 'Seventh'
     elif Number == 8:
-        print('Eight')
+        return 'Eight'
     elif Number == 9:
-        print('Ninth')
+        return 'Ninth'
     elif Number == 10:
-        print('Tenth')
+        return 'Tenth'
     elif Number == 11:
-        print('Eleventh')
+        return 'Eleventh'
     elif Number == 12:
-        print('Twelfth')
+        return 'Twelfth'
     else:
         print('')
 
