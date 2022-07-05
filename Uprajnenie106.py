@@ -2,13 +2,14 @@
 def Daysinmonth(Month, Year):
     if Month == 1 or Month == 3 or Month == 5 or Month == 7 or Month == 8 or Month == 10 or Month == 12:
         return 31
-    elif Year % 4 == 0 or (Year % 100 != 0 and Year % 400 == 0) and Month == 2:
+    elif (Year % 4 == 0 or (Year % 100 != 0 and Year % 400 == 0)) and Month == 2:
         return 29
     elif Month == 2:
         return 28
     elif Month == 4 or Month == 6 or Month == 9 or Month == 11:
         return 30
     else:
+        return Month
         print('Такого месяца нет')
 def Main():
     Month = int(input('Введите порядковый номер месяца: '))
@@ -42,4 +43,5 @@ def Main():
         print('Повторите попытку')
         quit()
     print(f'В {Year} году в {Month} {Days} дней')
-Main()
+if __name__ == '__main__':
+    Main()
