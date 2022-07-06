@@ -12,11 +12,11 @@ def Main():
     Year = 1900
     while Year != 2000:
         Check = Daysinmonth(Month, Year)
-        if Day == Check:
+        if Day > Check:
             Day = 1
             Month += 1
             continue
-        elif Month == 12:
+        elif Month > 12:
             Month = 1
             Year += 1
             continue
